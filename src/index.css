@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Public Sans", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-primary: #ec5b13;
+  --color-background-light: #f5f5f7;
+  --color-background-dark: #121212;
+}
+
+body {
+  background-color: var(--color-background-light);
+  color: #0f172a; /* slate-900 */
+  font-family: 'Public Sans', sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.sidebar-glass {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Custom scrollbar for a cleaner look */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.nav-item-active {
+  background-color: rgba(236, 91, 19, 0.1);
+  color: #ec5b13;
+  font-weight: 600;
+}
+
+.nav-item-inactive {
+  color: #64748b; /* slate-500 */
+}
+
+.nav-item-inactive:hover {
+  background-color: #f1f5f9; /* slate-100 */
+}
